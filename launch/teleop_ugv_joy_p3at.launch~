@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="joy" type="joy_node" name="joydriver">
+    <param name="dev" value="/dev/input/js0" />
+  </node>
+
+  <node pkg="nre_joy" type="teleop_ugv_joy" name="joymapping" output="screen">
+    <param name="scale_linear" type="double" value="1.0" />
+    <param name="scale_angular" type="double" value="1.0" />
+    <param name="axis_linear" type="int" value="1" />
+    <param name="axis_angular" type="int" value="0" />
+  </node>
+
+</launch>
