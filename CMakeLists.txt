@@ -127,6 +127,8 @@ include_directories(
 
 ## Declare a C++ executable
 # add_executable(nre_joy_node src/nre_joy_node.cpp)
+add_executable(teleop_ugv_joy src/teleop_ugv_joy.cpp)
+target_link_libraries(teleop_ugv_joy ${catkin_LIBRARIES})
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
