@@ -13,11 +13,12 @@ that /path/to/your/catkin_ws = ~/catkin_ws
 
 ```bash
 cd ~/catkin_ws/src
-git clone git@github.com:bsb808/nre_joy.git
+git clone https://github.com/bsb808/nre_joy.git
 cd ~/catkin_ws
 rosdep update
 rosdep install nre_joy
 catkin_make
+source ~/catkin_ws/devel/setup.bash 
 ```
 You can check that the package is installed by attempting to run the executable...
 
