@@ -1,9 +1,12 @@
 <?xml version="1.0"?>
 <launch>
   <arg name="namespace" default="/" />
+  <arg name="autorepeat_rate" default="0.0" />
   <group ns="$(arg namespace)">
     <node pkg="joy" type="joy_node" name="joydriver">
       <param name="dev" value="/dev/input/js0" />
+      <param name="autorepeat_rate" value="$(arg autorepeat_rate)"/>
+      <param name="coalesce_interval" value="0.1"/>
     </node>
     
     <node pkg="nre_joy" type="teleop_ugv_joy" name="joymapping" output="screen">

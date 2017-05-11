@@ -12,4 +12,4 @@ export ROS_HOSTNAME=${BASE_IP}
 echo "----------------------------------------"
 env | grep ROS
 echo "----------------------------------------"
-roslaunch nre_joy teleop_ugv_joy_p3at.launch
+#roslaunch nre_joy teleop_ugv_joy_p3at.launch
